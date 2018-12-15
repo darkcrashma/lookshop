@@ -24,7 +24,7 @@ gulp.task('sass', function() {
             browsers: ['last 2 versions'],
             cascade: false
             }))
-        .pipe(concatCSS("screen.css"))
+        .pipe(concatCSS("main.css"))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
