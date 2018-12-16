@@ -129,3 +129,73 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.container {
+  width: 971px;
+  margin: 0 auto;
+}
+
+.menu-top {
+  background-color: black;
+}
+
+.menu-top__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Arial MT", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.menu-top__phone {
+  padding: 10px 0 10px 0;
+  margin-right: 8px;
+}
+
+.menu-top__phone a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-top__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.menu-top__money {
+  text-transform: uppercase;
+  border-left: 1px solid #666666;
+  padding: 10px 14px 10px 	15px;
+}
+
+.menu-top__arrow {
+  display: inline-block;
+  margin-left: 5px;
+  width: 7px;
+  height: 4px;
+  fill: #666666;
+}
+
+.menu-top__account {
+  text-transform: uppercase;
+  border-left: 1px solid #666666;
+  padding: 10px 14px 10px 	15px;
+}
+
+.menu-top__search {
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+  padding: 10px 14px 10px 15px;
+}
