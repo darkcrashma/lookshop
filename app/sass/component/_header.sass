@@ -38,3 +38,50 @@
 		border-right: 1px solid $grey
 		padding: 10px 14px 10px 15px
 
+//header-menu
+.header-menu
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 20px 0 20px 0
+
+	&__block
+		display: flex
+		align-items: center
+.menu-list
+	margin-right: 24px
+	ul
+		display: flex
+		li
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			a
+				display: flex
+				text-decoration: none
+				color: #111111
+				font-family: $font-arial
+				font-size: 16px
+				font-weight: 400
+	&__arrow
+		margin-left: 4px
+		width: 7px
+		height: 4px
+.menu-cart
+	border: 1px solid $grey-light
+	&__block
+		display: flex
+		color: $grey-light
+		text-transform: uppercase
+		font-family: $font-arial
+		font-size: 11px
+		font-weight: 400
+	&__select
+		select
+			width: 100%
+	&__box
+		display: flex
+		padding: 13px 13px 10px 129px
+
+
