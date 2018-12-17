@@ -303,8 +303,19 @@ table {
 
 .main-slider__text {
   position: absolute;
-  left: 0;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
   z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn {
@@ -314,18 +325,29 @@ table {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 156px;
+  margin-top: 20px;
   cursor: pointer;
   padding: 20px 20px 20px 20px;
   background-color: #fd926d;
   color: #ffffff;
+  border-bottom: 2px solid #dd6b44;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .btn__arrow {
-  width: 4px;
-  height: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.btn__arrow svg {
+  width: 5px;
+  height: 5px;
 }
 
 /* Arrows */
