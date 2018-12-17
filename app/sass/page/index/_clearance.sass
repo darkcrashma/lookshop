@@ -1,0 +1,77 @@
+.clearance
+  &-title
+    position: relative
+    display: flex
+    justify-content: center
+    &:after
+      content: ''
+      position: absolute
+      width: 39%
+      height: 1px
+      background-color: $grey-light
+      top: 50%
+      left: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 39%
+      height: 1px
+      background-color: $grey-light
+      top: 50%
+      right: 0
+  &-products
+    display: flex
+    justify-content: space-between
+    padding-top: 25px
+    padding-bottom: 25px
+    &__item
+      width: 220px
+      &-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 12px
+        padding-bottom: 12px
+        background-color: $pink-light
+      &-img
+        display: flex
+        justify-content: center
+        overflow: hidden
+        height: 290px
+      img
+        width: auto
+  
+
+      &-name
+        text-transform: uppercase
+        font-family: "Arial MT", sans-serif
+        font-size: 12px
+        font-weight: 400
+        color: #373737
+      &-price
+        margin-top: 12px
+        color: #373737
+        font-family: "Arial MT", sans-serif
+        font-size: 22px
+        font-weight: 400
+        text-transform: uppercase
+      &-btn
+        box-sizing: border-box
+        display: flex
+        align-items: center
+        margin-top: 20px
+        cursor: pointer
+        padding: 10px
+        background-color: $orange
+        color: #ffffff
+        border-bottom: 2px solid $orange-dark
+        text-transform: uppercase
+        text-decoration: none
+        font-family: 'Helvetica', sans-serif
+        font-weight: 100
+        font-size: 12px
+        svg
+          margin-left: 5px
+          width: 11px
+          height: 11px

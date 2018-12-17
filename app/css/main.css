@@ -149,6 +149,66 @@ table {
   margin: 0 auto;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 20px 20px 20px 20px;
+  background-color: #fd926d;
+  color: #ffffff;
+  border-bottom: 2px solid #dd6b44;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.btn__arrow svg {
+  width: 5px;
+  height: 5px;
+}
+
+.add-cart-btn {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fd926d;
+  color: #ffffff;
+  border-bottom: 2px solid #dd6b44;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.add-cart-btn svg {
+  margin-left: 5px;
+  width: 11px;
+  height: 11px;
+}
+
 .menu-top {
   background-color: black;
 }
@@ -334,38 +394,6 @@ table {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 20px;
-  cursor: pointer;
-  padding: 20px 20px 20px 20px;
-  background-color: #fd926d;
-  color: #ffffff;
-  border-bottom: 2px solid #dd6b44;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.btn__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.btn__arrow svg {
-  width: 5px;
-  height: 5px;
 }
 
 /* Arrows */
@@ -645,4 +673,128 @@ table {
 
 .text-box {
   text-align: center;
+}
+
+.clearance-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.clearance-title:after {
+  content: '';
+  position: absolute;
+  width: 39%;
+  height: 1px;
+  background-color: #d6d6d6;
+  top: 50%;
+  left: 0;
+}
+
+.clearance-title:before {
+  content: '';
+  position: absolute;
+  width: 39%;
+  height: 1px;
+  background-color: #d6d6d6;
+  top: 50%;
+  right: 0;
+}
+
+.clearance-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.clearance-products__item {
+  width: 220px;
+}
+
+.clearance-products__item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f7f7f7;
+}
+
+.clearance-products__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 290px;
+}
+
+.clearance-products__item img {
+  width: auto;
+}
+
+.clearance-products__item-name {
+  text-transform: uppercase;
+  font-family: "Arial MT", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #373737;
+}
+
+.clearance-products__item-price {
+  margin-top: 12px;
+  color: #373737;
+  font-family: "Arial MT", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.clearance-products__item-btn {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fd926d;
+  color: #ffffff;
+  border-bottom: 2px solid #dd6b44;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.clearance-products__item-btn svg {
+  margin-left: 5px;
+  width: 11px;
+  height: 11px;
 }
