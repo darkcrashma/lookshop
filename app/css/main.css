@@ -890,3 +890,29 @@ table {
   font-weight: 400;
   line-height: 18px;
 }
+
+.pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pay span {
+  margin-right: 15px;
+  opacity: 0.5;
+  color: #414141;
+  font-family: "Arial MT", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pay-wrap {
+  background-color: #f7f7f7;
+  padding: 19px 0 19px 0;
+}
