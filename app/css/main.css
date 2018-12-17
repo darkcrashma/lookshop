@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../../fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("../../fonts/HelveticaNeueCyr-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../../fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2"), url("../../fonts/HelveticaNeueCyr-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -283,6 +297,10 @@ table {
   padding: 13px 13px 10px 129px;
 }
 
+.main-slider {
+  margin-bottom: 60px !important;
+}
+
 .main-slider__slide {
   position: relative;
   height: 440px;
@@ -379,7 +397,7 @@ table {
 /* Dots */
 
 .slick-dots {
-  bottom: -32px;
+  bottom: -40px;
 }
 
 .slick-dots li button:before {
@@ -390,4 +408,51 @@ table {
 
 .slick-dots li.slick-active button:before {
   color: #fd926d;
+}
+
+.subscribe {
+  background-color: #d6d6d6;
+}
+
+.subscribe .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-box__facebook,
+.social-box__twitter,
+.social-box__pinterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
 }
