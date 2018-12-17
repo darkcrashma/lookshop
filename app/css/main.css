@@ -426,6 +426,12 @@ table {
   align-items: center;
 }
 
+.subscribe-form form label {
+  font-family: 'Arial MT', sans-serif;
+  font-size: 12px;
+  color: #666666;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +439,12 @@ table {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.social-label {
+  font-family: 'Arial MT', sans-serif;
+  font-size: 12px;
+  color: #666666;
 }
 
 .social-box {
@@ -455,4 +467,182 @@ table {
   align-items: center;
   width: 55px;
   height: 55px;
+}
+
+.social-box__facebook:hover,
+.social-box__twitter:hover,
+.social-box__pinterest:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.banner__box {
+  margin-right: 2px;
+  width: 50%;
+}
+
+.banner__items-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+}
+
+.banner__item1 {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.banner__item1 img {
+  width: 100%;
+}
+
+.banner__item1__text {
+  position: absolute;
+  top: 20%;
+  right: 8.5%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.banner__item1__text:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.banner__item2 {
+  position: relative;
+  width: 99.5%;
+}
+
+.banner__item2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__item2__text {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.banner__item2__text:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.banner__item3 {
+  position: relative;
+  width: 50%;
+}
+
+.banner__item3 img {
+  width: 99%;
+}
+
+.banner__item3__text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 4%;
+  left: 3%;
+  color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 29px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.banner__item3__text:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.banner__item3__text-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.banner__item3__text-arrow svg {
+  width: 10px;
+  height: 11px;
+}
+
+.banner__item4 {
+  position: relative;
+  width: 50%;
+}
+
+.banner__item4 img {
+  width: 99%;
+}
+
+.banner__item4__text {
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.banner__item4__text:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.banner__item4__text-title {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.banner__item4__text .btn {
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #4fafa0;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+
+.banner__item4__text-arrow {
+  margin-left: 10px;
+}
+
+.banner__item4__text-arrow svg {
+  width: 10px;
+  height: 10px;
+}
+
+.text-box {
+  text-align: center;
 }

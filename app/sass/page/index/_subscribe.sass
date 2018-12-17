@@ -4,10 +4,19 @@
     display: flex
     justify-content: space-between
     align-items: center
-
+  &-form
+    form
+      label
+        font-family: 'Arial MT', sans-serif
+        font-size: 12px
+        color: $grey
 .social
   display: flex
   align-items: center
+  &-label
+    font-family: 'Arial MT', sans-serif
+    font-size: 12px
+    color: $grey
   &-box
     display: flex
     &__facebook,
@@ -18,3 +27,6 @@
       align-items: center
       width: 55px
       height: 55px
+      &:hover
+        background-color: #f7f7f7
+        cursor: pointer
