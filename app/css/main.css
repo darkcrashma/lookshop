@@ -1052,3 +1052,21 @@ table {
   background-color: #f7f7f7;
   padding: 19px 0 19px 0;
 }
+
+
+.slider-nav ul {
+  display: flex;
+}
+.slider-nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #4fafa0;
+  color: #ffffff;
+  font-family: "Arial MT", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.slider-nav ul li a:hover {
+  background-color: #fd926d;
+}
