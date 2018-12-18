@@ -368,6 +368,7 @@ table {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-bottom: 35px;
 }
 
 .footer-wrap {
@@ -403,6 +404,10 @@ table {
   line-height: 18px;
 }
 
+.footer-box__item:hover {
+  color: #fd926d;
+}
+
 .footer-box__social {
   width: 33%;
 }
@@ -411,15 +416,81 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-bottom-wrap {
+  padding: 35px 0 35px 0;
+  background-color: #000000;
+}
+
+.footer-bottom__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-flow: wrap;
-  flex-flow: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-bottom__item {
+  border-right: 1px solid #8d8d8d;
+  padding: 0 10px 0 10px;
+  color: #8d8d8d;
+  font-family: "Arial MT", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.footer-bottom__item:nth-child(1) {
+  padding-left: 0;
+}
+
+.footer-bottom__item:nth-child(5) {
+  border-right: none;
+}
+
+.footer-bottom__item a {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.footer-bottom__item a:hover {
+  color: #fd926d;
+}
+
+.footer-bottom__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: #8d8d8d;
+  font-family: "Arial MT", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
 }
 
 .main-slider {
