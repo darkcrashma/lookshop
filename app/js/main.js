@@ -10,5 +10,6 @@ $(document).ready( function() {
         dots: false,
         slidesToShow: 6,
         slidesToScroll: 0.5,
+        swipeToSlide: true,
     });
 });

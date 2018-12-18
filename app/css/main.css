@@ -811,6 +811,10 @@ table {
   text-align: center;
 }
 
+.clearance-wrap {
+  margin-top: 25px;
+}
+
 .clearance-title {
   position: relative;
   display: -webkit-box;
@@ -1084,11 +1088,11 @@ table {
 
 .products-slider-wrap .slick-prev,
 .products-slider-wrap .slick-next {
-  background-color: red;
-  width: 30px;
-  height: 117px;
+  display: block;
+  background-color: #f2f2f2;
+  width: 47px;
+  height: 47px;
   z-index: 10;
-  top: 0;
 }
 
 .products-slider-wrap .slick-prev {
