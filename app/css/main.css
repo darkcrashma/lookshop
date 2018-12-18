@@ -1054,36 +1054,55 @@ table {
 }
 
 
-/*Слайдер с товарами*/
 
+/* оформляем слайдер с товарами*/
 .slider-nav ul {
   display: flex;
 }
 .slider-nav ul li a {
-  box-sizing: border-box;
-  text-decoration: none;
+  display: block;
   padding: 10px;
-  background-color: #4fafa0;
-  color: #ffffff;
+  text-decoration: none;
+  color: #555555;
   font-family: "Arial MT", sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
 }
 .slider-nav ul li a:hover {
+  color: #ffffff;
   background-color: #fd926d;
 }
+
 .products-slider-wrap {
   padding: 30px 0 30px 0;
   background-color: #fd926d;
-}
-.products-slider__item {
-  width: 220px;
-}
 
-/*Slick-настройки слайдера*/
+}
 
 /* Arrows */
-.products-slider-wrap.slick-prev {
+
+.products-slider-wrap .slick-prev,
+.products-slider-wrap .slick-next {
+  background-color: red;
+  width: 30px;
+  height: 117px;
+  z-index: 10;
+  top: 0;
+}
+
+.products-slider-wrap .slick-prev {
   left: 0;
+}
+
+.products-slider-wrap .slick-prev:before {
+  color: #d6d6d6;
+}
+
+.products-slider-wrap .slick-next {
+  right: 0;
+}
+
+.products-slider-wrap .slick-next:before {
+  color: #d6d6d6;
 }

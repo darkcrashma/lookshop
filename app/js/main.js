@@ -7,8 +7,8 @@ $(document).ready( function() {
     });
     $('.products-slider-wrap').slick({
         arrows: true,
-        dots: true,
-        slidesToShow: 10,
-        slidesToScroll: 1,
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 0.5,
     });
 });
