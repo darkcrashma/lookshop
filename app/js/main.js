@@ -5,4 +5,10 @@ $(document).ready( function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+    $('.products-slider-wrap').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+    });
 });
