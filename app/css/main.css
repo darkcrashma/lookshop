@@ -1060,6 +1060,7 @@ table {
 
 
 /* оформляем слайдер с товарами*/
+
 .slider-nav ul {
   display: flex;
 }
@@ -1093,10 +1094,16 @@ table {
   width: 47px;
   height: 47px;
   z-index: 10;
+  top: 0;
+  transform: translateY(-100%);
 }
-
+.products-slider-wrap .slick-prev:hover,
+.products-slider-wrap .slick-next:hover{
+  background-color: #fd926d;
+}
 .products-slider-wrap .slick-prev {
-  left: 0;
+  left: auto;
+  right: 23.5%;
 }
 
 .products-slider-wrap .slick-prev:before {
@@ -1104,7 +1111,7 @@ table {
 }
 
 .products-slider-wrap .slick-next {
-  right: 0;
+  right: 21%;
 }
 
 .products-slider-wrap .slick-next:before {
