@@ -18,7 +18,7 @@
 										</div>
 										<!-- /.menu-top__phone -->
 										<div class="menu-top__box">
-												<div class="menu-top__money">
+												<a href="#" class="menu-top__money">
 														$ Us
 														<div class="menu-top__arrow">
 																<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -56,11 +56,11 @@
 </g>
 </svg>
 														</div>
-												</div>
+												</a>
 												<!-- /.menu-top__money -->
-												<div class="menu-top__account">My account</div>
+												<a href="#" class="menu-top__account">My account</a>
 												<!-- /.menu-top__account -->
-												<div class="menu-top__search">SRCH</div>
+												<a href="#" class="menu-top__search">SRCH</a>
 												<!-- /.menu-top__search -->
 										</div>
 										<!-- /.menu-top__box -->
@@ -70,15 +70,13 @@
 						<!-- /.container -->
 				</div>
 				<!-- /.header-menu-top -->
-				<div class="header-menu"></div>
-				<!-- /.header-menu -->
 
 				<div class="header-menu">
 						<div class="container">
 								<div class="header-menu__wrap">
-										<div class="menu-logo">
-												<img src="img/header-menu/logo.png" alt="logo">
-										</div>
+										<a href="#" class="menu-logo">
+											<img src="img/header-menu/logo.png" alt="logo">
+										</a>
 										<!-- /.menu-logo -->
 										<div class="header-menu__block">
 												<nav class="menu-list">
@@ -272,17 +270,21 @@
 												</nav>
 												<!-- /.menu-list -->
 												<div class="menu-cart">
-														<div class="menu-cart__select">
+														<form action="/" class="menu-cart__select">
+															<div class="menu-cart__select-wrap">
 																<select name="Your cart" id="">
-																		<option value="#">Your cart1</option>
-																		<option value="#">Your cart2</option>
-																		<option value="#">Your cart3</option>
-																		<option value="#">Your cart4</option>
+																	<option value="1">Your cart1</option>
+																	<option value="2">Your cart2</option>
+																	<option value="3">Your cart3</option>
+																	<option value="4">Your cart4</option>
 																</select>
-														</div>
-														<!-- /.menu-cart__select -->
+															</div>
+															<!-- /.menu-cart__select-wrap -->
+
 														<div class="menu-cart__box">
-																<div class="menu-cart__img"></div>
+																<div class="menu-cart__img">
+																	<img src="img/header-menu/cart.png" alt="cart">
+																</div>
 																<!-- /.menu-cart__img -->
 																<div class="menu-cart__block">
 																		<div class="menu-cart__items">0 Items</div>
@@ -293,6 +295,8 @@
 																<!-- /.menu-cart__block -->
 														</div>
 														<!-- /.menu-cart__box -->
+														</form>
+													<!-- /.menu-cart__select -->
 												</div>
 												<!-- /.menu-cart -->
 										</div>
@@ -387,9 +391,8 @@
 				<div class="subscribe-form">
 					<form action="#">
 						<label for="form__email">Stay updated</label>
-						<input id="form__email" type="email">
-						<input type="submit">
-
+						<input id="form__email" class="form__email" type="email" placeholder="Your email address">
+						<button class="form__submit" type="submit"></button>
 					</form>
 				</div>
 				<!-- /.subscribe-form -->
