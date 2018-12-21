@@ -284,17 +284,29 @@ table {
 }
 
 .menu-top__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #fff;
   border-left: 1px solid #666666;
   border-right: 1px solid #666666;
-  padding: 10px 14px 10px 15px;
+  padding: 0 9px 0 9px;
 }
+.menu-top__search-img svg {
+    width: 15px;
+    height: 15px;
+}
+
 .menu-top__money:hover,
 .menu-top__account:hover,
 .menu-top__search:hover {
     background-color: #fd926d;
     color: black;
+
+}
+.menu-top__search:hover path{
+    fill: black
 }
 
 .header-menu__wrap {
@@ -422,6 +434,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+    background-color: #fafafa;
     padding: 7px 10px 7px 10px;
 
 }
