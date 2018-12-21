@@ -11,22 +11,23 @@ gulp.task('serve', ['sass'], function() {
         server: "app/"
     });
 
-    gulp.watch("app/sass/**/*.sass", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+    // gulp.watch("app/sass/**/*.sass", ['sass']);
+    // gulp.watch("app/*.html").on('change', browserSync.reload);
+
 });
 
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("app/sass/**/*.sass")
-        .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-            }))
-        .pipe(concatCSS("main.css"))
-        .pipe(gulp.dest("app/css"))
-        .pipe(browserSync.stream());
-});
+// // Compile sass into CSS & auto-inject into browsers
+// gulp.task('sass', function() {
+//     return gulp.src("app/sass/**/*.sass")
+//         .pipe(sass())
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//             }))
+//         .pipe(concatCSS("main.css"))
+//         .pipe(gulp.dest("app/css"))
+//         .pipe(browserSync.stream());
+// });
 
 
 gulp.task('default', ['serve']);
