@@ -283,28 +283,50 @@ table {
 }
 
 .menu-top__account {
+    position: relative;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     border-left: 1px solid #666666;
-    padding: 10px 15px 9px 38px;
+    padding: 11px 15px 9px 38px;
     height: 100%;
-
 }
-
-.menu-top__search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-  border-left: 1px solid #666666;
-  border-right: 1px solid #666666;
-
-}
-.menu-top__search-img svg {
+.menu-top__account::before {
+    content: '';
+    background: url("../img/header-menu/user.svg") center no-repeat;
+    position: absolute;
     width: 15px;
     height: 15px;
+    top: 50%;
+    margin-top: -7.7px;
+    margin-left: -22px;
+}
+.menu-top__account:hover::before {
+    background: url("../img/header-menu/user-black.svg") center no-repeat;
+}
+
+
+.menu-top__search {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 15.5px;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666;
+}
+.menu-top__search::before {
+    content: '';
+    background: url("../img/header-menu/magnifying-glass-white.svg") center no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    margin-top: -7.5px;
+    left: 50%;
+    margin-left: -7.5px;
+}
+.menu-top__search:hover::before {
+    background: url("../img/header-menu/magnifying-glass-black.svg") center no-repeat;
 }
 
 .menu-top__money select:hover,
