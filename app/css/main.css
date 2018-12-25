@@ -357,7 +357,7 @@ table {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 20px 0 17px 0;
+    padding: 20px 0 18px 0;
 }
 
 .header-menu__block {
@@ -372,7 +372,8 @@ table {
     padding-top: 5px;
 }
 .menu-list {
-    margin-right: 16px;
+    padding-top: 1px;
+    margin-right: 17px;
 }
 .menu-list ul {
     display:flex;
@@ -422,10 +423,11 @@ table {
 .menu-cart {
     border: 1px solid #d6d6d6;
 }
+
 .menu-cart__select-wrap {
     position: relative;
     border-bottom: 1px solid #d6d6d6;
-    padding: 7px 9px;
+    padding: 8px 5px 6px 5px;
 
 }
 .menu-cart__select-wrap:after {
@@ -451,41 +453,43 @@ table {
 .menu-cart__select select {
     width: 100%;
 }
-.menu-cart__img {
-    margin-right: 99px;
-}
 
 .menu-cart__block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-      align-items: center;
+    align-items: center;
     color: #d6d6d6;
     text-transform: uppercase;
     font-family: "Arial MT", sans-serif;
     font-size: 11px;
     font-weight: 400;
+    margin-right: 12px;
 }
 
- .menu-cart__items {
-     color: #a2a1a1;
+.menu-cart__items {
+    color: #a2a1a1;
     border-right: 1px solid #cacaca;
-    padding-right: 7px;
+    padding-right: 11px;
  }
 .menu-cart__cash {
     color: #a2a1a1;
     padding-left: 7px;
 }
-
 .menu-cart__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 212px;
+    height: 32px;
+    justify-content: space-between;
     background-color: #fafafa;
-    padding: 6px 9px;
-
+}
+.menu-cart__img {
+    padding: 7px 0 5px 11px;
 }
 
+/*оформление главного слайдера */
 
 .main-slider {
   margin-bottom: 60px !important;
