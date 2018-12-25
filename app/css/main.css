@@ -262,11 +262,26 @@ table {
 }
 
 .menu-top__money {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     border-left: 1px solid #666666;
-
 }
+.menu-top__money::before {
+    content: '';
+    background: url("../img/header-menu/down-arrow.svg") center no-repeat;
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    top: 50%;
+    margin-top: -3px;
+    right: 0;
+    margin-right: 12px;
+}
+.menu-top__money:hover::before {
+    background: url("../img/header-menu/down-arrow-black.svg") center no-repeat;
+}
+
 .menu-top__money select{
     -webkit-appearance: none;
     -moz-appearance: none;
