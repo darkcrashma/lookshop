@@ -180,6 +180,9 @@ table {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
+    width: 120px;
+    height: 32px;
     margin-top: 20px;
     cursor: pointer;
     padding: 10px;
@@ -193,14 +196,26 @@ table {
     font-size: 12px;
 }
 
+.add-cart-btn::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url("../img/clearance/plus.svg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    right: 9%;
+    top: 30%;
+}
+
 .add-cart-btn:hover {
     background-color: #dd6b44;
 }
 
-.add-cart-btn svg {
-    margin-left: 5px;
-    width: 11px;
-    height: 11px;
+
+.active-tab {
+    background-color: #fd926d;
+    color: #ffffff !important;
 }
 
 /*оформление топ-меню*/
@@ -554,7 +569,7 @@ table {
     -webkit-background-size: cover ;
     background-size: cover;
     z-index: 5;
-    margin-left: -30%;
+    margin-left: -38%;
     margin-top: -25%;
 }
 .main-slider .slick-next {
@@ -578,8 +593,10 @@ table {
 
 /* Точки */
 
-.slick-dots {
-  bottom: -47px;
+.main-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    bottom: -47px;
 }
 
 .slick-dots li button:before {
@@ -1252,4 +1269,15 @@ table {
     font-family: "Arial MT", sans-serif;
     font-size: 11px;
     font-weight: 400;
+}
+
+/*прибиваем футер*/
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
